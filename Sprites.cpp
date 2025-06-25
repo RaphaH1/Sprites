@@ -89,7 +89,6 @@ int main() {
 
     // Dados do retângulo
     float vertices[] = {
-        // pos       // tex
         0.0f, 1.0f, 0.0f,   0.0f, 1.0f,
         1.0f, 1.0f, 0.0f,   1.0f, 1.0f,
         1.0f, 0.0f, 0.0f,   1.0f, 0.0f,
@@ -119,7 +118,7 @@ int main() {
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    // Carregar 4 texturas diferentes
+    // Carregar texturas
     unsigned int textures[4];
     textures[0] = loadTexture("assets/Aim.png");
     textures[1] = loadTexture("assets/Lie.png");
